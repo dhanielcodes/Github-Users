@@ -11,12 +11,12 @@
       <div class="profile_about">
         <h1><span class="username"> {{gottenUsername || 'Username'}} </span> <span>First {{amount || 0}} repos</span></h1>
         <h4><span>{{followers}} - followers</span><span>{{following}} - following</span></h4>
-        <h2>Website - <a :href="website">{{website}}</a></h2>
+        <h2>Website - <a :href="website" target="_blank">{{website}}</a></h2>
       </div>
     </div>
     <ul>
       <h3>REPOS -</h3>
-      <li v-for="(item, index) in repos" :key="index">{{item.name}}  - <a :href="item.html_url">Link</a></li>
+      <li v-for="(item, index) in repos" :key="index">{{item.name}}  - <a :href="item.html_url" target="_blank">Link</a></li>
     </ul>
      
   </div>
