@@ -1,4 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import Nav from "./Nav.vue";
+
+
+const app = createApp(App)
+app.component('Nav', Nav)
+app.mount('#app')
